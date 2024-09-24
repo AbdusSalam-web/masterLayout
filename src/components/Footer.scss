@@ -1,0 +1,16 @@
+.footer {
+  @apply absolute bottom-0 w-full bg-[#0A142F] px-[182px] py-[80px];
+  .footerLinks {
+    @apply flex  justify-between;
+    p {
+      @apply font-Inter font-bold text-[15px] text-[#FFF] mb-[16px] uppercase;
+    }
+    ul {
+      li {
+        a , Link {
+          @apply text-[#FFF] font-normal text-[15px]  flex capitalize;
+        }
+      }
+    }
+  }
+}

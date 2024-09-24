@@ -1,0 +1,61 @@
+.navbar .upperNavItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background: #004d66;
+  @apply px-[32px];
+}
+.navbar .upperNavItem .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .upperNavItem .left .telephone {
+  @apply flex items-center gap-4 font-Inter font-normal text-[10px] text-[#FBFBFB];
+}
+.navbar .upperNavItem .left .telephone .icon {
+  @apply text-[#FBFBFB]  w-[12px] h-[12px];
+}
+.navbar .upperNavItem .left .vr {
+  @apply w-[1px] h-[12px] bg-[#FBFBFB];
+}
+.navbar .upperNavItem .left .email {
+  @apply flex items-center gap-4 font-Inter font-normal text-[10px] text-[#FBFBFB];
+}
+.navbar .upperNavItem .left .email .icon {
+  @apply text-[#FBFBFB]  w-[12px] h-[12px];
+}
+.navbar .upperNavItem .right {
+  @apply flex gap-[8px] items-center;
+}
+.navbar .upperNavItem .right a {
+  @apply font-Inter font-normal text-[10px] text-[#FBFBFB];
+}
+.navbar .menu {
+  @apply bg-[#151D20] px-[64px] flex items-center justify-between;
+}
+.navbar .menu .logo {
+  @apply w-[163px] h-[39px];
+}
+.navbar .menu .menuLinks ul {
+  @apply flex gap-[40px];
+}
+.navbar .menu .menuLinks ul li {
+  @apply h-[39px] flex items-center transition-all duration-300 ease-in-out;
+}
+.navbar .menu .menuLinks ul li:hover a:before {
+  @apply w-full bg-[#E2E6E9];
+}
+.navbar .menu .menuLinks ul li a {
+  @apply font-Inter font-normal text-[10px] text-[#FBFBFB] transition-all duration-300 ease-in-out relative before:w-1 before:absolute before:bottom-[-10px] before:left-[50%] before:h-[2px] before:translate-x-[-50%] before:transition-all before:duration-300 before:ease-in-out before:bg-transparent;
+}
+.navbar .menu .menuLinks ul li a.active {
+  @apply text-[#31ff76];
+}
+.navbar .searchAndCart {
+  @apply flex gap-[28px] items-center;
+}
+.navbar .searchAndCart .icon {
+  @apply text-[#FBFBFB]  w-[16px] h-[16px] cursor-pointer;
+}/*# sourceMappingURL=Navbar.css.map */

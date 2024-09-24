@@ -1,0 +1,73 @@
+.navbar {
+  .upperNavItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background: #004d66;
+    @apply px-[32px];
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .telephone {
+        @apply flex items-center gap-4 font-Inter font-normal text-[10px] text-[#FBFBFB];
+
+        .icon {
+          @apply text-[#FBFBFB]  w-[12px] h-[12px];
+        }
+      }
+      .vr {
+        @apply w-[1px] h-[12px] bg-[#FBFBFB];
+      }
+
+      .email {
+        @apply flex items-center gap-4 font-Inter font-normal text-[10px] text-[#FBFBFB];
+        .icon {
+          @apply text-[#FBFBFB]  w-[12px] h-[12px];
+        }
+      }
+    }
+
+    .right {
+      @apply flex gap-[8px] items-center;
+
+      a {
+        @apply font-Inter font-normal text-[10px] text-[#FBFBFB];
+      }
+    }
+  }
+
+  .menu {
+    @apply bg-[#151D20] px-[64px] flex items-center justify-between;
+    .logo {
+      @apply w-[163px] h-[39px];
+    }
+    .menuLinks {
+      ul {
+        @apply flex gap-[40px];
+        li {
+          @apply h-[39px] flex items-center transition-all duration-300 ease-in-out;
+          &:hover a:before {
+            @apply w-full bg-[#E2E6E9];
+          }
+          a {
+            @apply font-Inter font-normal text-[10px] text-[#FBFBFB] transition-all duration-300 ease-in-out relative before:w-1 before:absolute before:bottom-[-10px] before:left-[50%] before:h-[2px] before:translate-x-[-50%] before:transition-all before:duration-300 before:ease-in-out before:bg-transparent;
+            &.active {
+              @apply text-[#31ff76];
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  .searchAndCart {
+    @apply flex gap-[28px] items-center;
+    .icon {
+      @apply text-[#FBFBFB]  w-[16px] h-[16px] cursor-pointer;
+    }
+  }
+}

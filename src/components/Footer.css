@@ -1,0 +1,12 @@
+.footer {
+  @apply absolute bottom-0 w-full bg-[#0A142F] px-[182px] py-[80px];
+}
+.footer .footerLinks {
+  @apply flex  justify-between;
+}
+.footer .footerLinks p {
+  @apply font-Inter font-bold text-[15px] text-[#FFF] mb-[16px] uppercase;
+}
+.footer .footerLinks ul li a, .footer .footerLinks ul li Link {
+  @apply text-[#FFF] font-normal text-[15px]  flex capitalize;
+}/*# sourceMappingURL=Footer.css.map */
